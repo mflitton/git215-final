@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Swiss Valley Spa And Ski Resort | Contact</title>
+        <meta name="author" content="Maddy Flitton">
+        <meta name="description" content="This page allows the user to input their contact information for our company's records.">
+
+        <link rel="icon" href="ResortPics/snowy-mountain-logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+
+        <header>
+            <h1><a href="index.html">Swiss Valley Spa And Ski Resort</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="ResortPics/swiss-valley.jpg" alt="A vast view of mountains in the background, cascading in the center, with bright green trees in front of them. A creek flows rapidly through the center of the trees, with a plain of grass on each side." width="1280">
+        </header>
+
+        <main>
+            <section id="ContactPage">
+                <h2>CONTACT US</h2>
+                <div>
+                    <p>Please reach out to us with any questions or concerns. We are happy to help you plan your dream vacation with us!</p>
+                    <p>Required fields marked with a *</p>
+                </div>
+
+                <img src="ResortPics/swiss-peak.jpg" alt="A large mountain covered in snow takes up most of the background, with the foreground being dark green trees with an icy creek running through the middle.">
+            
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+                        <label for="full-name">Full Name:<span class="required">*</span></label>
+                        <input type="text" name="full-name" id="full-name" required>
+
+                        <label for="user-email">Email Address: <span class="required">*</span></label>
+                        <input type="email" name="user-email" id="user-email" required>
+
+                        <label for="user-phone">Phone Number: <span class="required">*</span></label>
+                        <input type="tel" name="user-phone" id="user-phone" required>
+
+                        <fieldset>
+                            <legend>Preferred Contact Method:<span class="required">*</span></legend>
+
+                            <input type="radio" name="contact-pref" id="pref-email" checked>
+                            <label for="pref-email">Email</label>
+                            
+                            <input type="radio" name="contact-pref" id="pref-phone">
+                            <label for="pref-phone">Phone</label>
+                        </fieldset>
+
+                        <label for="user-comments">Comments: <span class="required">*</span></label>
+                        <textarea name="user-comments" id="user-comments" placeholder="In 500 characters or less..." maxlength="500" required></textarea>
+
+                        <input type="submit" name="submit-button" id="submit-button" value="Submit">
+
+                    </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>Copyright &#169; 2023 - Swiss Valley Spa and Ski Resort</p>
+            <p>This site is for educational purposes only.</p>
+        </footer>
+
+    </body>
+</html>
